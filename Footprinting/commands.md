@@ -24,6 +24,12 @@ dig any inlanefreight.com
 ```
 
 FTP Commands
-```
+```sh
 https://web.archive.org/web/20230326204635/https://www.smartfile.com/blog/the-ultimate-ftp-commands-list/
+
+# connect to ftp
+ftp 10.129.14.136
+ftp> ls
+
 ```
+
