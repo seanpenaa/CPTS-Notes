@@ -185,7 +185,7 @@ SSL-Session:
     Max Early Data: 0
 ---
 read R BLOCK
-* OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ AUTH=PLAIN] HTB{roncfbw7iszerd7shni7jr2343zhrj}
+* OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ AUTH=PLAIN] HTB{......}
  LOGIN robin robin1 LOGIN robin robin
 * BAD Error in IMAP command received by server.
 1 LOGIN robin robin
