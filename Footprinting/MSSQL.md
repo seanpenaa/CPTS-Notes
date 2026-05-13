@@ -33,3 +33,4 @@ connecting to mssql
 ```
 python3 mssqlclient.py Administrator@$TARGET -windows-auth
 ```
+<img width="901" height="754" alt="image" src="https://github.com/user-attachments/assets/15542485-7722-4305-bac7-e35151572776" />
