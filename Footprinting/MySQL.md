@@ -20,3 +20,4 @@ mysql -h $TARGET -u robin -p --ssl=0 robin
 |    select * from <table>;     |      Show everything in the desired table.       |
 |    select * from <table> where <column> = "<string>";     |      Search for needed string in the desired table.       |
 
+
