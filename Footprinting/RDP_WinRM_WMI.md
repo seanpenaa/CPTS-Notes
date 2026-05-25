@@ -10,8 +10,8 @@ xfreerdp /u:cry0l1t3 /p:"P455w0rd!" /v:10.129.201.248
 ```
 
 ```
-nmap -sV -sC 10.129.201.248 -p5985,5986 --disable-arp-ping -n
-evil-winrm -i 10.129.201.248 -u Cry0l1t3 -p P455w0rD!
+nmap -sV -sC $TARGET -p5985,5986 --disable-arp-ping -n
+evil-winrm -i $TARGET -u Cry0l1t3 -p P455w0rD!
 ```
 
 
