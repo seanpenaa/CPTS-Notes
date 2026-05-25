@@ -5,11 +5,11 @@ Infrastructure Enumeration
 
 Service Enumeration
 
-
 Host Enumeration
 
 Pillaging
 
+## Passive:
 | Technique | Description | Example | Tools | Risk of Detection |
 |---|---|---|---|---|
 | Port Scanning | Identifying open ports and services running on the target. | Using Nmap to scan a web server for open ports like 80 (HTTP) and 443 (HTTPS). | Nmap, Masscan, Unicornscan | High: Direct interaction with the target can trigger intrusion detection systems (IDS) and firewalls. |
