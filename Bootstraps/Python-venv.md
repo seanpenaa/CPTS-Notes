@@ -15,4 +15,7 @@ source .venv/bin/activate
 
 python -m pip install --upgrade pip
 python -m pip install .
+
+#for w4af
+PIPENV_VENV_IN_PROJECT=1 pipenv --python 3.11 install
 ```
